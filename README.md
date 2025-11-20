@@ -1,2 +1,50 @@
 # sankadonghub
-Web Donghua
+
+sankadonghub adalah UI/Front End dari [Api Sanka](https://www.sankavollerei.com/anime) dimana user bisa nonton, streaming, & download donghua sub indo/subtitle indo secara online gratis gapake karcis cuyy...
+
+- Teknologi : Astro, Node, TypeScript, Tailwind, Flowbite
+- Api : [Api Sanka](https://www.sankavollerei.com/anime)
+
+## Installasi
+
+1. clone atau download repo
+
+```sh
+git clone https://sankavollerei.com/sankadonghub.git
+```
+
+2. masuk ke repo
+
+```sh
+cd sankadonghub
+```
+
+3. install dependensi
+
+```sh
+npm install
+```
+
+4. menjalankan server mode pengembangan
+
+```sh
+npm run dev
+```
+
+5. build project
+
+```sh
+npm run build
+```
+
+6. preview project yang sudah dibuild
+
+```sh
+npm run preview
+```
+
+app ini berjalan di sisi server, secara default menggunakan node sebagai adapternya, selengkapnya liat [disini](https://docs.astro.build/en/guides/on-demand-rendering/#server-adapters), untuk menjalankanya gunakan perintah berikut :
+
+```sh
+node ./dist/server/entry.mjs
+```
