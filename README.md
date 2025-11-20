@@ -11,12 +11,20 @@ Api Donghua: **[https://www.sankavollerei.com/anime](https://www.sankavollerei.c
 
 ---
 
+### Vercel
+
+Host your own instance of <a href="https://sankadonghub.vercel.app">sankadonghub</a>  on vercel
+
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/SankaVollereii/jsankadonghub)
+
+---
+
 ## Installasi
 
 1. clone atau download repo
 
 ```sh
-git clone https://sankavollerei.com/sankadonghub.git
+git clone https://github.com/SankaVollereii/sankadonghub.git
 ```
 
 2. masuk ke repo
