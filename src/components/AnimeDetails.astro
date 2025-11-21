@@ -41,7 +41,7 @@ const { anime } = Astro.props;
     <span class="line-clamp-2">: {anime.episodes}</span>
     <span>Score</span>
     {
-      /* PERBAIKAN DI SINI: Menambahkan () di akhir untuk memanggil fungsi */
+      /* PERBAIKAN UTAMA: Menambahkan () di akhir fungsi ini */
       (() => {
         if (typeof anime.score === "object") {
           return (
@@ -52,7 +52,7 @@ const { anime } = Astro.props;
           );
         }
         return <span class="line-clamp-2">: {anime.score}</span>;
-      })()
+      })() 
     }
     <span>Producers</span>
     <span class="line-clamp-2">: {anime.producers}</span>
