@@ -1,7 +1,7 @@
 import sanka from "@utils/sanka";
 
 interface NewApiGenreList {
-    data: any[];
+    [key: string]: any;
 }
 
 interface anime {
@@ -29,7 +29,10 @@ export default async function animeByGenreService(
 
   const result = await sanka<NewApiGenreList>(endpoint);
 
-  const AnimeList: animeCard2[] = (result.data.data || []).map((item) => ({
+  const rawData = result.data || {};
+  const list = rawData.data || rawData.anime_list || rawData.donghua_list || rawData.results || [];
+
+  const animeList: animeCard2[] = list.map((item: any) => ({
       title: item.title,
       poster: item.poster,
       status: item.status,
@@ -40,5 +43,5 @@ export default async function animeByGenreService(
       genreList: []
   }));
 
-  return { ...result, data: { AnimeList } };
+  return { ...result, data: { animeList } };
 }
