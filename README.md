@@ -63,7 +63,7 @@ Untuk informasi lebih lanjut tentang adapter server, kunjungi [dokumentasi Astro
 
 ## 🤝 Contributing
 
-Kontribusi, issues, dan feature requests sangat diterima!
+Open Kontribusi, issues, dan feature requests!
 
 ## 👨‍💻 Author
 
