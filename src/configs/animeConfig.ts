@@ -14,7 +14,7 @@ interface animeConfig {
 }
 
 const animeConfig: animeConfig = {
-  sankadonghub: {
+  Renndonghub: {
     siteName: "Renndonghub",
     description: "Nonton donghua gratis ga pake karcis hanya di Renndonghub,iklan tanggung sendiri🗿",
     logo: "/images/logo.png",
