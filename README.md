@@ -1,4 +1,4 @@
-# SankaDonghub
+# RennDonghub
 
 Platform streaming donghua modern yang dibangun dengan teknologi web terkini.
 
@@ -19,7 +19,7 @@ Donghua API tersedia di: **[https://www.sankavollerei.com/anime](https://www.san
 ### Clone Repository
 
 ```sh
-git clone https://github.com/SankaVollereii/sankadonghub.git
+git clone https://github.com/renoXD1/Renndonghub.git
 cd sankadonghub
 ```
 
