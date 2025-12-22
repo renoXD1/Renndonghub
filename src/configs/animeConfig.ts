@@ -1,5 +1,5 @@
 interface animeConfig {
-  sankadonghub: {
+  Renndonghub: {
     siteName: string;
     description: string;
     logo: string;
@@ -15,8 +15,8 @@ interface animeConfig {
 
 const animeConfig: animeConfig = {
   sankadonghub: {
-    siteName: "sankadonghub",
-    description: "Nonton donghua gratis ga pake karcis hanya di Sankadonghub",
+    siteName: "Renndonghub",
+    description: "Nonton donghua gratis ga pake karcis hanya di Renndonghub,iklan tanggung sendiri🗿",
     logo: "/images/logo.png",
     favicon: "/favicon.png",
     image: "/images/sankadonghub.jpg",
