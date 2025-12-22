@@ -11,7 +11,7 @@ interface Props {
 
 const config = (animeConfig as any).default || animeConfig;
 const {
-  sankadonghub: { siteName, description, favicon },
+  Renndonghub: { siteName, description, favicon },
 } = config;
 
 const seoProps = Astro.props.seo;
@@ -50,7 +50,7 @@ const seo: SEOProps = {
         { title: "Ongoing", href: "/ongoing" },
         { title: "Completed", href: "/completed" },
         { title: "History", href: "/history" },
-        { title: "Donasi", href: "https://sociabuzz.com/sankanime/tribe" },
+        { title: "Donasi", href: "https://sociabuzz.com/im-renn/tribe" },
       ]}
     />
 
@@ -78,12 +78,12 @@ const seo: SEOProps = {
           { title: "Disclaimers", href: "/disclaimers" },
           {
             title: "Donasi",
-            href: "https://sociabuzz.com/sankanime/tribe",
+            href: "https://sociabuzz.com/im-renn/tribe",
             targetBlank: true,
           },
           {
             title: "Terima Kasih",
-            href: "https://sociabuzz.com/sankanime/tribe",
+            href: "https://sociabuzz.com/im-renn/tribe",
             targetBlank: true,
           },
         ],
@@ -93,8 +93,7 @@ const seo: SEOProps = {
 </html>
 
 <script
-  is:inline
-  src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"
+  is:im-rennt/npm/flowbite@2.5.2/dist/flowbite.min.js"
 ></script>
 
 <script is:inline>
