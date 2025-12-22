@@ -12,7 +12,7 @@ import Pagination from "@components/Pagination.astro";
 import Error from "@components/Error.astro";
 
 const {
-  sankadonghub: { siteName },
+  Renndonghub: { siteName },
 } = animeConfig;
 const page = Astro.url.searchParams.get("page");
 const recent = await recentService({ page });
