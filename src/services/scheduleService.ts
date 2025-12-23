@@ -1,4 +1,4 @@
-import sanka from "@utils/sanka";
+import Renn from "@utils/Renn";
 
 interface NewApiSchedule {
     schedule: {
@@ -15,7 +15,7 @@ interface Schedule {
 }
 
 export default async function scheduleService() {
-  const result = await sanka<NewApiSchedule>("/schedule");
+  const result = await Renn<NewApiSchedule>("/schedule");
 
   const days = (result.data.schedule || []).map((d) => ({
       day: d.day,
