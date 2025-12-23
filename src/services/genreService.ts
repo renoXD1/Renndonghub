@@ -1,4 +1,4 @@
-import sanka from "@utils/sanka";
+import Renn from "@utils/Renn";
 
 interface NewApiGenre {
     data: { name: string; slug: string; url: string }[];
@@ -9,7 +9,7 @@ interface AllGenres {
 }
 
 export default async function genreService() {
-  const result = await sanka<NewApiGenre>("/genres");
+  const result = await Renn<NewApiGenre>("/genres");
 
   const genreList: GenreLinkCard[] = (result.data.data || []).map((item) => ({
       title: item.name,
