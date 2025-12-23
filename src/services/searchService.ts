@@ -1,4 +1,4 @@
-import sanka from "@utils/sanka";
+import Renn from "@utils/Renn";
 
 interface NewApiSearchItem {
   title: string;
@@ -32,7 +32,7 @@ export default async function searchService(queryParam: {
       };
   }
 
-  const result = await sanka<NewApiSearch>(`/search/${q}`);
+  const result = await Renn<NewApiSearch>(`/search/${q}`);
   
   const animeList: animeCard2[] = (result.data.data || []).map((item) => ({
       title: item.title,
