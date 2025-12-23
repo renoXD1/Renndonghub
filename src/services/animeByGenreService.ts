@@ -1,4 +1,4 @@
-import sanka from "@utils/sanka";
+import Renn from "@utils/Renn";
 
 interface NewApiGenreList {
     [key: string]: any;
@@ -27,7 +27,7 @@ export default async function animeByGenreService(
       endpoint = `/genres/${genreId}/${page || 1}`;
   }
 
-  const result = await sanka<NewApiGenreList>(endpoint);
+  const result = await Renn<NewApiGenreList>(endpoint);
 
   const rawData = result.data || {};
   const list = rawData.data || rawData.anime_list || rawData.donghua_list || rawData.results || [];
