@@ -1,4 +1,4 @@
-import sanka from "@utils/sanka";
+import Renn from "@utils/Renn";
 
 interface NewApiCompleted {
     completed_donghua: any[];
@@ -12,7 +12,7 @@ export default async function batchService(queryParam: {
   page?: string | number | null;
 } = {}) {
   const { page } = queryParam;
-  const result = await sanka<NewApiCompleted>(`/completed/${page || 1}`);
+  const result = await Renn<NewApiCompleted>(`/completed/${page || 1}`);
 
   const batchList: animeCard2[] = (result.data.completed_donghua || []).map((item) => ({
       title: item.title,
