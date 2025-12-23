@@ -1,4 +1,4 @@
-import sanka from "@utils/sanka";
+import Renn from "@utils/Renn";
 
 interface NewApiDetail {
     title: string;
@@ -44,7 +44,7 @@ export default async function batchInfoService(routeParams: {
   batchId: string;
 }) {
   const { batchId } = routeParams;
-  const result = await sanka<NewApiDetail>(`/detail/${batchId}`);
+  const result = await Renn<NewApiDetail>(`/detail/${batchId}`);
   const raw = result.data;
 
   const mappedData: animeBatch = {
