@@ -1,4 +1,4 @@
-import sanka from "@utils/sanka";
+import Renn from "@utils/Renn";
 
 export interface Allanimes {
   list: {
@@ -8,7 +8,7 @@ export interface Allanimes {
 }
 
 export default async function homeService() {
-  const result = await sanka<Allanimes>("/anime");
+  const result = await Renn<Allanimes>("/anime");
 
   return result;
 }
