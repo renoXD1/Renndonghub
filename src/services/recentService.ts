@@ -1,4 +1,4 @@
-import sanka from "@utils/sanka";
+import Renn from "@utils/Renn";
 
 interface NewApiLatest {
     latest_donghua: any[];
@@ -12,7 +12,7 @@ export default async function recentService(queryParam: {
   page?: string | number | null;
 } = {}) {
   const { page } = queryParam;
-  const result = await sanka<NewApiLatest>(`/latest/${page || 1}`);
+  const result = await Renn<NewApiLatest>(`/latest/${page || 1}`);
 
   const animeList: animeCard1[] = (result.data.latest_donghua || []).map((item) => ({
       title: item.title,
