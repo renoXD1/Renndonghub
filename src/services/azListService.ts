@@ -1,5 +1,5 @@
 
-import sanka from "@utils/sanka";
+import Renn from "@utils/Renn";
 
 interface AZList {
   az_list_letters: {
@@ -10,6 +10,6 @@ interface AZList {
 }
 
 export default async function azListService() {
-  const result = await sanka<AZList>("/az-list");
+  const result = await Renn<AZList>("/az-list");
   return result;
 }
