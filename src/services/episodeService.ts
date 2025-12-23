@@ -1,4 +1,4 @@
-import sanka from "@utils/sanka";
+import Renn from "@utils/Renn";
 
 interface NewApiEpisode {
   episode: string;
@@ -45,7 +45,7 @@ export default async function episodeService(routeParams: {
   episodeId: string;
 }) {
   const { episodeId } = routeParams;
-  const result = await sanka<NewApiEpisode>(`/episode/${episodeId}`);
+  const result = await Renn<NewApiEpisode>(`/episode/${episodeId}`);
   const raw = result.data;
   const details = raw.donghua_details || {};
 
