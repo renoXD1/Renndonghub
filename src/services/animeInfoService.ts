@@ -1,4 +1,4 @@
-import sanka from "@utils/sanka";
+import Renn from "@utils/Renn";
 
 interface NewApiDetail {
   title: string;
@@ -44,7 +44,7 @@ export default async function animeInfoService(routeParams: {
   animeId: string;
 }) {
   const { animeId } = routeParams;
-  const result = await sanka<NewApiDetail>(`/detail/${animeId}`);
+  const result = await Renn<NewApiDetail>(`/detail/${animeId}`);
   const raw = result.data;
 
   const mappedData: AnimeDetails = {
