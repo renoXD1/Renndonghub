@@ -12,10 +12,10 @@ interface Payload<T> {
 
 const config = (animeConfig as any).default || animeConfig;
 const {
-  sankadonghubApi: { apiUrl, baseUrlPath },
+  RenndonghubApi: { apiUrl, baseUrlPath },
 } = config;
 
-export default async function sanka<T>(pathname: string): Promise<Payload<T>> {
+export default async function Renn<T>(pathname: string): Promise<Payload<T>> {
   const fullPath = generateUrlPath(baseUrlPath, pathname);
   const url = new URL(fullPath, apiUrl).href;
 
