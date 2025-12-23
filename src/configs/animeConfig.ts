@@ -7,7 +7,7 @@ interface animeConfig {
     image: string;
   };
 
-  sankadonghubApi: {
+  RenndonghubApi: {
     apiUrl: string;
     baseUrlPath: string;
   };
