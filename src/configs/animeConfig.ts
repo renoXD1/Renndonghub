@@ -22,7 +22,7 @@ const animeConfig: animeConfig = {
     image: "/images/sankadonghub.jpg",
   },
 
-  Renndonghubapi: {
+  RenndonghubApi: {
     apiUrl: "https://www.sankavollerei.com",
     baseUrlPath: "/anime/donghua",
   },
