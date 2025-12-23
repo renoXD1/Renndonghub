@@ -1,4 +1,4 @@
-import sanka from "@utils/sanka";
+import Renn from "@utils/Renn";
 
 interface Azanime {
   donghua_list: any[];
@@ -14,7 +14,7 @@ export default async function azanimeService(
 ) {
   const { letter } = routeParams;
   const { page } = queryParam;
-  const result = await sanka<Azanime>(`/az-list/${letter}/${page || 1}`);
+  const result = await Renn<Azanime>(`/az-list/${letter}/${page || 1}`);
 
   const animeList: animeCard2[] = (result.data.donghua_list || []).map((item) => ({
       title: item.title,
