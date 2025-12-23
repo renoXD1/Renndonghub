@@ -1,4 +1,4 @@
-import sanka from "@utils/sanka";
+import Renn from "@utils/Renn";
 
 interface NewApiHome {
   latest_release: any[];
@@ -24,7 +24,7 @@ interface Home {
 }
 
 export default async function homeService() {
-  const result = await sanka<NewApiHome>("/home/1");
+  const result = await Renn<NewApiHome>("/home/1");
   
   const recentList: animeCard1[] = (result.data.latest_release || []).map((item) => {
       const eps = (item.current_episode || "??").replace(/Ep\s*/i, "").trim();
